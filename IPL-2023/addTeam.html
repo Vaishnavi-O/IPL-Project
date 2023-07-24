@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Indian Premier League</title>
+    <link rel="icon" href="./assets/favicon.ico" type="image/png" />
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/cf845565b5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <div class="left-container">
+        <div class="logo">
+          <img src="./assets/logo.png" alt="IPL-Logo" />
+        </div>
+        <div class="menu">
+          <ul>
+            <li>
+              <a href="./index.html"> Home</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="right-container">
+        <a href="./addPlayer.html"
+          ><button
+            id="add-player-btn"
+            class="add-btn"
+            onclick="addPlayerClicked()"
+          >
+            <i class="fa-solid fa-plus"></i> Add Player
+          </button></a
+        >
+      </div>
+    </nav>
+
+    <main>
+      <div class="add-team">
+        <div class="form">
+          <h1>Add Your Team Here !</h1>
+          <form id="addteamform" class="team-form">
+            <p><i class="fa-solid fa-user-pen"></i> Team Name :</p>
+            <input
+              id="inp1"
+              type="text"
+              name="teamName"
+              placeholder="Enter team name here.."
+              required
+            />
+
+            <p><i class="fa-solid fa-camera-retro"></i> Team logo Url :</p>
+            <input
+              id="inp3"
+              type="text"
+              name="logoUrl"
+              placeholder="Enter logo URL here.."
+              required
+            />
+
+            <p><i class="fa-solid fa-trophy"></i> Won count :</p>
+            <input
+              id="inp4"
+              type="number"
+              name="wonCount"
+              placeholder="Enter won count here.."
+              required
+            />
+
+            <button type="submit">Add team</button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p class="footer">Created by Vaishnavi Oddiraju | Copyright 2023</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="./script.js"></script>
+    <script src="./addPlayer.js"></script>
+  </body>
+</html>

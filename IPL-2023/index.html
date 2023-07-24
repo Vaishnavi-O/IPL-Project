@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Indian Premier League</title>
+    <link rel="icon" href="./assets/favicon.ico" type="image/png" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/cf845565b5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <div class="left-container">
+        <div class="ipl-logo">
+          <img src="./assets/logo.png" alt="IPL-Logo" />
+        </div>
+        <div class="menu">
+          <ul>
+            <li>
+              <a href="./index.html">HOME</a>
+            </li>
+            <li>
+              <a href="#teams">TEAMS</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="right-container">
+        <div class="search-bar">
+          <a href="" target="_blank" hidden></a>
+          <input
+            type="text"
+            id="input"
+            placeholder="Enter team name. Eg: CSK"
+          />
+          <div class="suggestions"></div>
+          <div class="icon"><i class="fas fa-search"></i></div>
+        </div>
+
+        <a href="./addTeam.html"
+          ><button id="add-team-btn" class="add-btn" onclick="addteamclicked()">
+            <i class="fa-solid fa-plus"></i> Add Team
+          </button></a
+        >
+        <a href="./addPlayer.html"
+          ><button
+            id="add-player-btn"
+            class="add-btn"
+            onclick="addPlayerClicked()"
+          >
+            <i class="fa-solid fa-plus"></i> Add Player
+          </button></a
+        >
+      </div>
+    </nav>
+
+    <section id="teams">
+      <div class="card">
+        <div class="team-heading">
+          <h1>IPL 2023 Teams</h1>
+        </div>
+
+        <div class="top-teams" id="teams-container"></div>
+      </div>
+    </section>
+
+    <footer>
+      <p class="footer">Created by Vaishnavi Oddiraju | Copyright 2023</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./data.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
